@@ -21,7 +21,12 @@ namespace TelegramBotDev
 
             if (e.Message.Text == "Hi")
             {
-                botClient.SendTextMessageAsync(e.Message.Chat.Id,"What's Up ?");
+                botClient.SendTextMessageAsync(e.Message.Chat.Id, "What's Up ?");
+            }
+
+            if (e.Message.Text == "Bye")
+            {
+                botClient.SendTextMessageAsync(e.Message.Chat.Id, "Ok Goodbye Pal Ciaongcjtfxjgfxujtxzjgcfxdh");
             }
         }
     }
