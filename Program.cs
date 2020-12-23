@@ -1,8 +1,8 @@
 ﻿using System;
 using Telegram.Bot;
-
 namespace TelegramBotDev
 {
+    using Google.Cloud.Vision.V1;
     class Program
     {
 
@@ -26,7 +26,7 @@ namespace TelegramBotDev
 
             if (e.Message.Text == "Bye")
             {
-                botClient.SendTextMessageAsync(e.Message.Chat.Id, "Ok Goodbye Pal Ciaongcjtfxjgfxujtxzjgcfxdh");
+                botClient.SendTextMessageAsync(e.Message.Chat.Id, "Ok Goodbye");
             }
         }
     }
